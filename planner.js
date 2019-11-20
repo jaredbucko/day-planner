@@ -12,8 +12,6 @@ $("#today").text(today);
 // load events from storage
 var saved = localStorage.getItem("testArray");
 var savedEvents = JSON.parse(saved);
-console.log(savedEvents);
-console.log(savedEvents.length);
 if (saved) {
   for (var j=0; j<savedEvents.length; j++) {
     var savedEvent = savedEvents[j];
