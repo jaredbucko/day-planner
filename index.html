@@ -6,12 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/9c52b15c6c.js" crossorigin="anonymous"></script>
   <!-- moment -->
   <script src="moment.js"></script>
+  <!-- css -->
+  <style>
+    .form-control {
+      resize: none;
+      color: white;
+    }
+  
+  </style>
   <!-- title -->
   <title>Day Planner</title>
 </head>
@@ -20,104 +26,69 @@
   <!-- Jumbotron for Title -->
   <div class="jumbotron bg-info text-white">
     <h1 class="text-center">Day Planner</h1>
-    <h3 class="text-center">Schedule out your day and see what's coming up at a glance!</h3>
-    <h4 class="text-center" id="today"></h4>
+    <h3 class="text-center" id="today"></h3>
   </div>
 
   <div class="container">
 
     <div class="row">
-      <div class="col-lg-1 text-center">9AM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-      </div>
+      <div class="col-md-1 text-center">9AM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry1" hour="9"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id="btn1"></button></div>
     </div>
 
     <div class="row">
-      <div class="col-lg-1 text-center">10AM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-      </div>
+      <div class="col-md-1 text-center">10AM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry10" hour="10"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id=""></button></div>
     </div>
 
     <div class="row">
-      <div class="col-lg-1 text-center">11AM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-      </div>
+      <div class="col-md-1 text-center">11AM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry11" hour="11"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id=""></button></div>
     </div>
 
     <div class="row">
-      <div class="col-lg-1 text-center">12PM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-      </div>
+      <div class="col-md-1 text-center">12PM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry12" hour="12"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id=""></button></div>
     </div>
 
     <div class="row">
-      <div class="col-lg-1 text-center">1PM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-      </div>
+      <div class="col-md-1 text-center">1PM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry13" hour="13"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id=""></button></div>
     </div>
 
     <div class="row">
-      <div class="col-lg-1 text-center">2PM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-      </div>
+      <div class="col-md-1 text-center">2PM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry14" hour="14"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id=""></button></div>
     </div>
 
     <div class="row">
-      <div class="col-lg-1 text-center">3PM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-      </div>
+      <div class="col-md-1 text-center">3PM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry15" hour="15"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id=""></button></div>
     </div>
 
     <div class="row">
-      <div class="col-lg-1 text-center">4PM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-      </div>
+      <div class="col-md-1 text-center">4PM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry16" hour="16"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id=""></button></div>
     </div>
 
     <div class="row">
-      <div class="col-lg-1 text-center">5PM</div>
-      <div class="col-lg-11 input-group m-0">
-        <textarea type="text" class="form-control entry"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-        </div>
-    </div>
+      <div class="col-md-1 text-center">5PM</div>
+      <div class="col-md-10"><textarea class="form-control entry" id="entry17" hour="17"></textarea></div>
+      <div class="col-md-1 text-center"><button class="far fa-save" id=""></button></div>
   </div>
 
-  <!-- custom jquery -->
-  <script src="jQuery.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- javascript -->
+  <script src="planner.js"></script>
   <!-- moment -->
   <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
   <script src="moment.js"></script>
