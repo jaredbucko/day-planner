@@ -1,5 +1,3 @@
-console.log(this.localStorage);
-
 var entry = $(".entry");
 var saveBtn = $("button");
 var background = $(".form-control");
@@ -15,7 +13,6 @@ var savedEvents = JSON.parse(saved);
 if (saved) {
   for (var j=0; j<savedEvents.length; j++) {
     var savedEvent = savedEvents[j];
-    console.log(entry[j]);
     entry.eq(j).val(savedEvent);
     // entry[j].value = savedEvent;
   }
@@ -43,7 +40,6 @@ saveBtn.click(function(){
 // change event background color based on time of day
 var day = new Date();
 var now = day.getHours();
-console.log(now);
 for (var k=0; k<textarea.length; k++) {
   var hour = parseInt($("textarea").eq(k).attr("hour"));
   if (hour < now) {
