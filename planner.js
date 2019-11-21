@@ -40,13 +40,14 @@ saveBtn.click(function(){
 // change event background color based on time of day
 var day = new Date();
 var now = day.getHours();
+console.log(now);
 for (var k=0; k<textarea.length; k++) {
   var hour = parseInt($("textarea").eq(k).attr("hour"));
-  if (hour < now) {
-    $("textarea").eq(k).css("background-color", "#999999");
+  if (hour > now) {
+    $("textarea").eq(k).css("background-color", "darkseagreen");
   } else if (hour === now) {
-    $("textarea").eq(k).css("background-color", "#ff7e79");
+    $("textarea").eq(k).css("background-color", "firebrick");
     } else {
-      $("textarea").eq(k).css("background-color", "darkseagreen");
+      $("textarea").eq(k).css("background-color", "dimgray");
     }
   }
