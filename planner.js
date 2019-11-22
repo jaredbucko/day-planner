@@ -38,8 +38,7 @@ saveBtn.click(function(){
 });
 
 // change event background color based on time of day
-var day = new Date();
-var now = day.getHours();
+var now = moment().hour();
 console.log(now);
 for (var k=0; k<textarea.length; k++) {
   var hour = parseInt($("textarea").eq(k).attr("hour"));
